@@ -1,0 +1,190 @@
+body {
+    font-size: 1.4rem;
+    font-family: "Roboto" Sans-Serif;
+    background: #cacaca;
+    font-style: normal;
+}
+
+header {
+    width: 1200px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.title {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+.title h1 {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.title h1 .red {
+    color: red;
+}
+
+.title h1 .blue {
+    color: #00549f;
+}
+
+.title h3 {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.card-container {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10px;
+}
+
+.card-container .card-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 5px;
+}
+
+.card-container .card-list .card-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+    border: 1px 1px 1px solid #000;
+}
+
+.card-container .card-list .card-item .heading-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 7px 9px;
+}
+
+.card-container .card-list .card-item .heading-card h4 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Roboto", system-ui;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.card-container .card-list .card-item .heading-card p {
+    font-size: 1.5rem;
+    max-width: 90px;
+    text-align: center;
+    background-color: #ff4c49;
+    border-radius: 8px;
+    padding: 5px 7px;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+}
+
+.card-item .card-desc table {
+    padding: 0;
+    padding: 8px;
+}
+
+.card-item .card-desc table tr td {
+    font-size: 1rem;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    max-width: 180px;
+}
+
+.card-item .card-price {
+    width: 100%;
+    padding: 8px;
+}
+
+.card-item .card-price h1 {
+    font-size: 1.5rem;
+    color: #ff4c49;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    padding: 8px;
+}
+
+.card-item .btn-wa button {
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 7px;
+}
+
+.card-item .btn-wa button a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    padding: 8px 10px;
+    font-style: normal;
+}
+
+/* Responsive handphone */
+
+@media screen and (max-width: 678px) {
+    header {
+        margin-top: 8px;
+    }
+    header nav a {
+        font-weight: 800;
+    }
+    .card-container .card-list {
+        flex-direction: column;
+    }
+
+    .card-item {
+        padding: 15px;
+    }
+
+    .card-container .card-list .card-item .heading-card h4 {
+        font-size: 1.4rem;
+    }
+
+    .card-container .card-list .card-item .heading-card p {
+        font-size: 1rem;
+    }
+}
